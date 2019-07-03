@@ -4,7 +4,9 @@ I'm using PyCall (calling from Ruby) for Heroku Python.
 
 Heroku's buildpack has a known issue with PyCall: https://github.com/mrkn/pycall.rb/issues/62
 
-To fix, I've forked this buildpack to use `--enable-shared` in the Python build. 
+To fix, I've forked this buildpack to use `--enable-shared` in the Python build: https://github.com/richgong/heroku-buildpack-python/commit/43874f65a387c158d548c0f1191ed37f8d7cb068
+
+Similar to here: https://github.com/mrkn/pycall.rb/blob/c282d62aa0756bf4e71c570822d4c2be2957d442/docker/Dockerfile#L52
 
 # Heroku Buildpack: Python
 
