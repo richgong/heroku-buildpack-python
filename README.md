@@ -1,6 +1,14 @@
-![python](https://cloud.githubusercontent.com/assets/51578/13712821/b68a42ce-e793-11e5-96b0-d8eb978137ba.png)
+# Richard Gong's note on this fork
+
+I'm using PyCall (calling from Ruby) for Heroku Python.
+
+Heroku's buildpack has a known issue with PyCall: https://github.com/mrkn/pycall.rb/issues/62
+
+To fix, I've forked this buildpack to use `--enable-shared` in the Python build. 
 
 # Heroku Buildpack: Python
+
+![python](https://cloud.githubusercontent.com/assets/51578/13712821/b68a42ce-e793-11e5-96b0-d8eb978137ba.png)
 
 [![Build Status](https://travis-ci.org/heroku/heroku-buildpack-python.svg?branch=master)](https://travis-ci.org/heroku/heroku-buildpack-python)
 
